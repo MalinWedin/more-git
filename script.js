@@ -8,10 +8,12 @@ function printRandomNumber() {
 // Helper function 1
 function getRandomNumber() {
     const randomNumber = Math.random() * 100
-    return Math.random(randomNumber);
+    return Math.round(randomNumber);
 }
 
 // Helper function 2 
 function addNumberToPage(number) {
-    console.log(number);
+    const div = document.getElementById('results')
+    div.append(number + ', ');
+    //console.log(div, number);
 }
